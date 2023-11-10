@@ -5,6 +5,15 @@
     line-height: 1.75;
 }
 
+/* Kindly follow this pattern when working on your task: 
+    Use rems or ems instead of pixels, you can use percentages too
+    Don't forget to add box-sizing property to your css
+    Use a class name that is related to the line your are working on
+    Make your codes readable */
+
+
+
+/* The heading*/
 .heading{
     display: flex;
     justify-content: space-around;
@@ -13,53 +22,64 @@
     text-align: center;
 }
 
+/* styling for the description header */
 .description{
-    flex-basis: 35%;
-    margin: 0 auto;
+    flex-basis: 28rem;
+    margin: 0 auto;     /*centers the item*/
     font-size: 1.5rem;
 }
 
+/* styling for the food header */
 .foodName{
-   width: 40%;
+   width: 30rem;
 }
 
+/* styling for the general product section */
 .productDetails{
     display: flex;
     justify-content: space-around;
 }
 
+/* styling for the image section */
 .img{
-    flex-basis: 35%;
+    flex-basis: 35rem;
     text-align: center;
     margin-left: 2rem;
 }
 
+/* styling for the description section */
 .details{
-    flex-basis: 35%;
-    margin: 0 auto;
+    flex-basis: 35rem;
+    margin: 0 auto;    
     font-size: 1.2rem;
 }
 
+/* styling for the price section */
 .price{
-    flex-basis: 15%;
+    flex-basis: 15rem;
     text-align: center;
     font-size: 1.5rem;
 }
+
+/* styling for the images */
 img{
     width: 30rem;
     height: 20rem;
 }
 
+/* styling for the food names */
 h2{
-    margin-left: 5%;
+    margin-left: 5rem;
     font-size: 2rem;
     font-weight: bolder;
 }
 
+/* gave each sections some margin */
 .space{
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
+/* styling for the amount*/
 span{
     font-weight: bolder;
 }
