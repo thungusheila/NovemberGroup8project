@@ -13,54 +13,38 @@
 
 
 
-/* The heading*/
-.heading{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-/* styling for the description header */
-.description{
-    flex-basis: 28rem;
-    margin: 0 auto;     /*centers the item*/
-    font-size: 1.5rem;
-}
-
-/* styling for the food header */
-.foodName{
-   width: 30rem;
-}
 
 /* styling for the general product section */
 .productDetails{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
 }
 
 /* styling for the image section */
 .img{
-    flex-basis: 30rem;
     text-align: center;
-    margin-left: 2rem;
+    padding: 0 1rem;
 }
 
 /* styling for the description section */
 .details{
-    flex-basis: 30rem;
     margin: 0 auto;
-    margin-left: 4rem;    
     font-size: 1.2rem;
     text-align: justify;
+    padding: 0 1rem;
 }
 
 /* styling for the price section */
 .price{
-    flex-basis: 20rem;
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+span{
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
 
 /* styling for the images */
@@ -71,7 +55,7 @@ img{
 
 /* styling for the food names */
 h2{
-    margin-left: 5rem;
+    text-align: center;
     font-size: 2rem;
     font-weight: bolder;
 }
@@ -79,12 +63,12 @@ h2{
 /* gave each sections some margin */
 .space{
     margin-top: 2rem;
+    flex-basis: 30rem;
+    
 }
 
 /* styling for the amount*/
-span{
-    font-weight: bolder;
-}
+
 
 /* Responsiveness start. 
 Adjusted some properties to fit into smaller screens, the phone and tablet views.
@@ -117,6 +101,7 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
         padding: 0 1rem;
         font-size: 1rem;
         flex-basis: 6rem;
+        margin: 0;
     }
 
     .price{
@@ -169,6 +154,7 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
         padding: 0 1rem;
         font-size: 1.2rem;
         flex-basis: 6rem;
+        margin: 0;
     }
 
     .price{
