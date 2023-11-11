@@ -19,7 +19,6 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-   
 }
 
 /* styling for the image section */
@@ -49,8 +48,8 @@ span{
 
 /* styling for the images */
 img{
-    width: 30rem;
-    height: 20rem;
+    width: 100%;
+    height: 10%;
 }
 
 /* styling for the food names */
@@ -63,7 +62,7 @@ h2{
 /* gave each sections some margin */
 .space{
     margin-top: 2rem;
-    flex-basis: 30rem;
+    flex-basis: 30%;
     
 }
 
