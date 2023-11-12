@@ -1,50 +1,51 @@
 body {
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    /* padding: 10px; */
-    /* text-align: center; */
-    
+  background-color: #333;
+  color: #fff;
+  /* padding: 10px; */
+  /* text-align: center; */
 }
 
 /* #welcome-section, */
 #about-section {
-    /* text-align: cover; */
-    padding: 5% 10%;
-    text-align: center;
-    
+  /* text-align: cover; */
+  padding: 5% 10%;
+  text-align: center;
 }
-#welcome-section{
-    background-image:linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../IMAGES/restaurant_interior.jpg');
-    background-size:cover;
-    height: 50vh;
-    text-align: center;
-    padding: 10%;
-    backdrop-filter: blur (10px);
-    color: white;
-    
-    
+#welcome-section {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../IMAGES/restaurant_interior.jpg");
+  background-size: cover;
+  height: 50vh;
+  text-align: center;
+  padding: 10%;
+  backdrop-filter: blur (10px);
+  color: white;
 }
 
-#welcome-section, h1{
-    margin-top: 0px;
-    font-size:x-large;
-    font-weight: bolder;
+#welcome-section,
+h1 {
+  margin-top: 0px;
+  font-size: x-large;
+  font-weight: bolder;
 }
-#welcome-section, p{
-    font-size:large;
-   
+#welcome-section,
+p {
+  font-size: large;
 }
-#intro{
-    padding: 2%;
+#intro {
+  padding: 2%;
 }
 
 /* img {
@@ -55,139 +56,130 @@ header {
 } */
 
 footer {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  background-color: #333;
+  width: 100%;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+  display: inline-flex;
+  font-size: large;
+  margin: 0 20px;
+  flex-direction: row;
+}
+
+button {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: yellow;
+  font-weight: bold;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+@media screen and (width: 760px) {
+  h3 {
+    margin: 0% 3%;
+  }
+}
+
+@media screen and (min-width: 290px) and (max-width: 760px) {
+  h3 {
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-nav{ 
-    display: flex;
-    position: fixed;
-    background-color: #333;
-    width: 100%;
-    justify-content: space-around;
-}
-li{
-    list-style: none;
+    margin-left: 50px;
+  }
+  ul {
     display: inline-flex;
+    padding-left: 0px;
+    padding-right: 50px;
+  }
+  nav {
+    padding: 10px;
+  }
+  h1 {
     font-size: large;
-    margin: 0 20px;
-    flex-direction: row;
-}
+    margin-top: 30%;
+  }
+  #welcome-section,
+  p {
+    font-size: small;
+  }
 
-
-
-button{
-    border-radius: 20px;
-    padding:10px;
-    background-color: yellow;
-    font-weight: bold;
-    margin-top: 3%;
-}
-
-@media screen and (width: 760px){
-    h3{
-        margin: 0% 3%
-    }
-    
-}
-
-
-@media screen and (min-width: 290px) and (max-width:760px){
-    h3{
-        text-align: center;
-        margin-left: 50px;
-    }
-    ul{
-        display: inline-flex;
-        padding-left: 0px;
-        padding-right: 50px;
-    }
-    nav{
-        padding:10px;
-    }
-    h1{
-        font-size: large;
-        margin-top: 30%;
-    }
-    #welcome-section, p{
-        font-size:small;
-       
-    }
-    
-    #about-section {
-        margin-bottom: 50px;
-        
-    }
-    /* h2{
+  #about-section {
+    margin-bottom: 50px;
+  }
+  /* h2{
         margin-top: 10px;
         margin-bottom: 0px;
     } */
-   
 }
 @media screen and (width: 280px) {
-    h3{
-        text-align: center;
-        margin-left: 50px;
-    }
-    ul{
-        display: inline-flex;
-        padding-left: 0px;
-        padding-right: 50px;
-    }
-    nav{
-        padding:10px;
-    }
-    h1{
-        font-size: medium;
-        margin-top: 50%;
-    }
-    #welcome-section, p{
-        font-size:small;
-        margin-top: 0px;
-    }
-    
-    #about-section {
-        margin-bottom: 50px;
-        
-    }
-    button{
-        padding: 7px;
-        margin-top: 0px;
-    }
-   
+  h3 {
+    text-align: center;
+    margin-left: 50px;
+  }
+  ul {
+    display: inline-flex;
+    padding-left: 0px;
+    padding-right: 50px;
+  }
+  nav {
+    padding: 10px;
+  }
+  h1 {
+    font-size: medium;
+    margin-top: 50%;
+  }
+  #welcome-section,
+  p {
+    font-size: small;
+    margin-top: 0px;
+  }
+
+  #about-section {
+    margin-bottom: 50px;
+  }
+  button {
+    padding: 7px;
+    margin-top: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    h3{
-        text-align: center;
-        margin-left: 50px;
-        
-    }
-    ul{
-        display: inline-flex;
-        padding-left: 0px;
-        padding-right: 50px;
-    }
-    nav{
-        padding:10px;
-    }
-    h1{
-        font-size:25px;
-        margin-top: 10%;
-    }
-    #welcome-section, p{
-        font-size:larger;
-       
-    }
-    #about-section {
-        font-size: large;
-        margin-bottom: 10%;
-    }
-   
+  h3 {
+    text-align: center;
+    margin-left: 50px;
+  }
+  ul {
+    display: inline-flex;
+    padding-left: 0px;
+    padding-right: 50px;
+  }
+  nav {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 25px;
+    margin-top: 10%;
+  }
+  #welcome-section,
+  p {
+    font-size: larger;
+  }
+  #about-section {
+    font-size: large;
+    margin-bottom: 10%;
+  }
 }
-

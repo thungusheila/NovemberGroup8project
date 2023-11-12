@@ -1,8 +1,8 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    line-height: 1.75;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.75;
 }
 
 /* Kindly follow this pattern when working on your task: 
@@ -11,157 +11,159 @@
     Use a class name that is related to the line your are working on
     Make your codes readable */
 
-
-
-
 /* styling for the general product section */
-.productDetails{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.productDetails {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* styling for the image section */
-.img{
-    text-align: center;
-    padding: 0 1rem;
+.img {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* The back button to home page */
+#btn {
+  margin-left: 25px;
+  margin-top: 15px;
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* styling for the description section */
-.details{
-    margin: 0 auto;
-    font-size: 1.2rem;
-    text-align: justify;
-    padding: 0 1rem;
+.details {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 0 1rem;
 }
 
 /* styling for the price section */
-.price{
-    font-size: 1.2rem;
-    padding: 0 1rem;
+.price {
+  font-size: 1.2rem;
+  padding: 0 1rem;
 }
 
-span{
-    font-weight: bolder;
-    font-size: 1.3rem;
+span {
+  font-weight: bolder;
+  font-size: 1.3rem;
 }
 
 /* styling for the images */
-img{
-    width: 100%;
-    height: 10%;
+img {
+  width: 100%;
+  height: 10%;
 }
 
 /* styling for the food names */
-h2{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bolder;
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
 /* gave each sections some margin */
-.space{
-    margin-top: 2rem;
-    flex-basis: 30%;
+.space {
+  margin-top: 2rem;
+  flex-basis: 30%;
 }
 
 /* styling for the amount*/
-
 
 /* Responsiveness start. 
 Adjusted some properties to fit into smaller screens, the phone and tablet views.
 */
 
 @media screen and (max-width: 480px) {
+  /* styling for phone view */
 
-    /* styling for phone view */
+  * {
+    box-sizing: border-box;
+  }
 
+  .productDetails {
+    flex-direction: column;
+    height: 90%;
+  }
 
-    *{
-        box-sizing: border-box;
-    }
+  .img {
+    flex-basis: 16rem;
+  }
 
-    .productDetails{
-        flex-direction: column;
-        height: 90%;
-    }
+  .details {
+    text-align: justify;
+    padding: 0 1rem;
+    font-size: 1rem;
+    flex-basis: 6rem;
+    margin: 0;
+  }
 
-    .img{
-        flex-basis: 16rem;
-    }
+  .price {
+    flex-basis: 2rem;
+    font-size: 1.2rem;
+    margin-right: 3rem;
+    text-align: end;
+  }
 
-    .details{
-        text-align: justify;
-        padding: 0 1rem;
-        font-size: 1rem;
-        flex-basis: 6rem;
-        margin: 0;
-    }
+  .space {
+    margin-bottom: 1rem;
+  }
 
-    .price{
-        flex-basis: 2rem;
-        font-size: 1.2rem;
-        margin-right: 3rem;
-        text-align: end;
-    }
+  img {
+    width: 20rem;
+    height: 15rem;
+  }
 
-    .space{
-        margin-bottom: 1rem;
-    }
-
-    img{
-        width: 20rem;
-        height: 15rem;
-    }
-
-    h2{
-        font-size: 1.4rem;
-        margin: 0;
-        text-align: center;
-    }
-
+  h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  /* styling for tablet/pad view*/
 
-    /* styling for tablet/pad view*/
+  * {
+    box-sizing: border-box;
+  }
 
-    *{
-        box-sizing: border-box;
-    }
+  .productDetails {
+    flex-direction: column;
+    height: 90%;
+  }
 
-    .productDetails{
-        flex-direction: column;
-        height: 90%;
-    }
+  .img {
+    flex-basis: 20rem;
+  }
 
-    .img{
-        flex-basis: 20rem;
-    }
+  .details {
+    text-align: justify;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    flex-basis: 6rem;
+    margin: 0;
+  }
 
-    .details{
-        text-align: justify;
-        padding: 0 1rem;
-        font-size: 1.2rem;
-        flex-basis: 6rem;
-        margin: 0;
-    }
+  .price {
+    flex-basis: 2rem;
+    font-size: 1.5rem;
+    margin-right: 5rem;
+    text-align: end;
+  }
 
-    .price{
-        flex-basis: 2rem;
-        font-size: 1.5rem;
-        margin-right: 5rem;
-        text-align: end;
-    }
+  img {
+    width: 27rem;
+    height: 20rem;
+  }
 
-    img{
-        width: 27rem;
-        height: 20rem;
-    }
-
-    h2{
-        font-size: 1.7rem;
-        margin: 0;
-        text-align: center;
-    }
+  h2 {
+    font-size: 1.7rem;
+    margin: 0;
+    text-align: center;
+  }
 }
