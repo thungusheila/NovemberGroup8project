@@ -8,20 +8,20 @@
 
 
 /* styling for the general product section */
-.mycuisine{
+.productdetails{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 /* styling for the image section */
-.myimg{
+.img{
     text-align: center;
     padding: 0 1rem;
 }
 
 /* styling for the description section */
-.mydescription{
+.details{
     margin: 0 auto;
     font-size: 1.2rem;
     text-align: justify;
@@ -29,7 +29,7 @@
 }
 
 /* styling for the price section */
-.myprice{
+.price{
     font-size: 1.2rem;
     padding: 0 1rem;
 }
@@ -53,7 +53,7 @@ h2{
 }
 
 /* gave each sections some margin */
-.myitem{
+.space{
     margin-top: 2rem;
     flex-basis: 30%;
     
@@ -83,12 +83,12 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
         height: 90%;
     }
 
-    .myimg{
+    .img{
         margin-left: 0;
         flex-basis: 16rem;
     }
 
-    .mydescription{
+    .details{
         text-align: justify;
         padding: 0 1rem;
         font-size: 1rem;
@@ -96,14 +96,14 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
         margin: 0;
     }
 
-    .myprice{
+    .price{
         flex-basis: 2rem;
         font-size: 1.2rem;
         margin-right: 3rem;
         text-align: end;
     }
 
-    .myitem{
+    .space{
         margin-bottom: 1rem;
     }
 
@@ -136,12 +136,12 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
         height: 90%;
     }
 
-    .myimg{
+    .img{
         margin-left: 0;
         flex-basis: 20rem;
     }
 
-    .mydescription{
+    .details{
         text-align: justify;
         padding: 0 1rem;
         font-size: 1.2rem;
@@ -149,7 +149,7 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
         margin: 0;
     }
 
-    .myprice{
+    .price{
         flex-basis: 2rem;
         font-size: 1.5rem;
         margin-right: 5rem;
