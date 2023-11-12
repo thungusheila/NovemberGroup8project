@@ -63,7 +63,6 @@ h2{
 .space{
     margin-top: 2rem;
     flex-basis: 30%;
-    
 }
 
 /* styling for the amount*/
@@ -82,16 +81,12 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
         box-sizing: border-box;
     }
 
-    .heading{
-        display: none;
-    }
     .productDetails{
         flex-direction: column;
         height: 90%;
     }
 
     .img{
-        margin-left: 0;
         flex-basis: 16rem;
     }
 
@@ -127,7 +122,7 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 780px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
     /* styling for tablet/pad view*/
 
@@ -135,16 +130,12 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
         box-sizing: border-box;
     }
 
-    .heading{
-        display: none;
-    }
     .productDetails{
         flex-direction: column;
         height: 90%;
     }
 
     .img{
-        margin-left: 0;
         flex-basis: 20rem;
     }
 
