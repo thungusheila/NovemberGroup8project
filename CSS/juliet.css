@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.75;
+  }
+  
+  .productDetails {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* styling for the image section */
+  .img {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  /* styling for the description section */
+  .details {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 0 1rem;
+  }
+  
+  /* styling for the price section */
+  .price {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+  
+  span {
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+  
+  /* styling for the images */
+  img {
+    width: 30rem;
+    height: 20rem;
+  }
+  
+  /* styling for the food names */
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  
+  /* gave each section some margin */
+  .space {
+    margin-top: 2rem;
+    flex-basis: 30rem;
+  }
+  
+  /* styling for the amount*/
+  
+  /* Responsiveness start. 
+  Adjusted some properties to fit into smaller screens, the phone and tablet views.
+  */
+  
+  @media screen and (max-width: 480px) {
+    /* styling for phone view */
+  
+    .productDetails {
+      flex-direction: column;
+      height: 90%;
+    }
+  
+    .img {
+      margin-left: 0;
+      flex-basis: 16rem;
+    }
+  
+    .details {
+      text-align: justify;
+      padding: 0 1rem;
+      font-size: 1rem;
+      flex-basis: 6rem;
+      margin: 0;
+    }
+  
+    .price {
+      flex-basis: 2rem;
+      font-size: 1.2rem;
+      margin-right: 3rem;
+      text-align: end;
+    }
+  
+    img {
+      width: 20rem;
+      height: 15rem;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+      margin: 0;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 780px) {
+    /* styling for tablet/pad view*/
+  
+    .productDetails {
+      flex-direction: column;
+      height: 90%;
+    }
+  
+    .img {
+      margin-left: 0;
+      flex-basis: 20rem;
+    }
+  
+    .details {
+      text-align: justify;
+      padding: 0 1rem;
+      font-size: 1.2rem;
+      flex-basis: 6rem;
+      margin: 0;
+    }
+  
+    .price {
+      flex-basis: 2rem;
+      font-size: 1.5rem;
+      margin-right: 5rem;
+    } 
+}
