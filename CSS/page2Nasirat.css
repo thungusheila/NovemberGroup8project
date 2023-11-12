@@ -74,7 +74,7 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
     .heading{
         display: none;
     }
-    .mycuisine{
+    .productdetails{
         flex-direction: column;
         height: 90%;
     }
@@ -127,7 +127,7 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
     .heading{
         display: none;
     }
-    .mycuisine{
+    .productdetails{
         flex-direction: column;
         height: 90%;
     }
