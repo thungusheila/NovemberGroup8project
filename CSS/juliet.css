@@ -5,15 +5,6 @@
   line-height: 1.75;
 }
 
-/* Kindly follow this pattern when working on your task: 
-  Use rems or ems instead of pixels, you can use percentages too
-  Don't forget to add box-sizing property to your css
-  Use a class name that is related to the line your are working on
-  Make your codes readable */
-
-
-
-
 /* styling for the general product section */
 .productDetails{
   display: flex;
@@ -127,20 +118,35 @@ Adjusted some properties to fit into smaller screens, the phone and tablet views
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 780px) {
+@media screen and (max-width: 480px) {
 
-  /* styling for tablet/pad view*/
+    /* styling for phone view */
 
-  *{
-      box-sizing: border-box;
-  }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .heading{
+        display: none;
+    }
+    .mycuisine{
+        flex-direction: column;
+        height: 90%;
+    }
+
+    .img{
+        margin-left: 0;
+        flex-basis: 16rem;
+    }
 
   .heading{
       display: none;
   }
-  .productDetails{
-      flex-direction: column;
-      height: 90%;
+  .productDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .img{
